@@ -1,0 +1,24 @@
+{
+  "name": "vir-vue",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@splidejs/vue-splide": "github:splidejs/vue-splide",
+    "@vueuse/motion": "^2.1.0",
+    "primevue": "^3.50.0",
+    "vue": "^3.4.21",
+    "vue-i18n": "^9.11.0",
+    "vue-lazyload": "^3.0.0",
+    "vue-preloader": "^1.1.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.1.5"
+  }
+}

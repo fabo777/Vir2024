@@ -1,0 +1,13 @@
+@import './base.css';
+@import url(https://db.onlinewebfonts.com/c/a1f86d41a569d625fbba6395102dc206?family=Lemon+Tuesday);
+
+
+@font-face {
+    font-family: "Lemon Tuesday";
+    src: url("https://db.onlinewebfonts.com/t/a1f86d41a569d625fbba6395102dc206.eot");
+    src: url("https://db.onlinewebfonts.com/t/a1f86d41a569d625fbba6395102dc206.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/a1f86d41a569d625fbba6395102dc206.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/a1f86d41a569d625fbba6395102dc206.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/a1f86d41a569d625fbba6395102dc206.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/a1f86d41a569d625fbba6395102dc206.svg#Lemon Tuesday")format("svg");
+}

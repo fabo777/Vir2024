@@ -1,0 +1,26 @@
+[
+    {
+        "id":"aboutUs",
+        "name": "ABOUT US",
+        "text": "Apartments Vesna are situated just a short distance from Zadar (25 km), specifically on the southern side of the beautiful and tranquil island of Vir. We offer three apartments located within one house, yet each one is completely separate. Parking is available right in front of the house, free of charge, and a barbecue area is at your disposal. The distance from the apartments to the beach is only 70 meters. The beach is pebbled and child-friendly, with palm trees lining the shore to provide shade from the sun. An added benefit is the sandy area and a pier from which you can jump into the sea.",
+        "pictures": ["1", "2", "3", "4", "5", "6"]
+    },
+    {
+      "id":"apartman1",
+      "name": "APARTMENT 1",
+      "text": "Apartment 1 is located on the ground floor and covers an area of 70m2. It can accommodate up to 4 people. It consists of a living room, dining area, two bedrooms (one with a double bed, and the other with two single beds), a kitchen, a bathroom, and a covered terrace. Additional amenities in the apartment include air conditioning, Wi-Fi, a dishwasher, a washing machine, a microwave, an oven, an electric kettle, and a TV. All additional amenities are provided free of charge.",
+      "pictures": ["1", "2", "3", "4", "5", "6","7"]
+    },
+    { 
+      "id":"apartman2",
+      "name": "APARTMENT 2",
+      "text": "Apartment 2 is located on the ground floor, with access from the western side of the house. The surface area of this apartment is 28m2, and it can accommodate two people. Due to its smaller size and peaceful surroundings, it is ideal for couples. It consists of a living room with a sofa, one bedroom with two single beds, a kitchen, a bathroom, and a terrace. Additional amenities in the apartment include air conditioning, Wi-Fi, a microwave, an electric kettle, and a TV. All additional amenities are provided free of charge.",
+      "pictures": ["1", "2", "3", "4", "5", "6"]
+    },
+    {
+      "id":"apartman3",
+      "name": "APARTMENT 3",
+      "text": "Apartment 3 is located on the upper floor of the house and covers an area of 70m2. It can accommodate two people. It consists of a living room connected to the dining area and kitchen, one large bedroom (with one double bed and two single beds), a bathroom, and an open terrace. Additional amenities in the apartment include air conditioning, Wi-Fi, a dishwasher, a washing machine, a microwave, an oven, an electric kettle, and a TV. All additional amenities are provided free of charge.",
+      "pictures": ["1", "2", "3", "4", "5"]
+    }
+  ]
