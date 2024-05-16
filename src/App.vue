@@ -1,5 +1,5 @@
 <template>
-  <VuePreloader
+  <!--   <VuePreloader
     background-color="#091a28"
     color="#8daba8"
     transition-type="fade-up"
@@ -8,7 +8,7 @@
     @loading-is-over="loadingIsOver"
     @transition-is-over="transitionIsOver"
   >
-  </VuePreloader>
+  </VuePreloader> -->
   <div style="width: 100%; background-color: #8daba8">
     <div class="container">
       <div class="section"><LandingPage /></div>
@@ -65,12 +65,18 @@ export default {
 </script>
 
 <style>
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body,
 html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 .container {
