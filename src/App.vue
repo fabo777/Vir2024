@@ -11,8 +11,16 @@
   </VuePreloader> -->
   <div style="width: 100%; background-color: #8daba8">
     <div class="container">
-      <div class="section"><LandingPage /></div>
-      <Navbar />
+      <div class="section">
+        <LandingPage
+          :selectedApartment="selectedApartment"
+          @update:selectedApartment="updateSelectedApartment"
+        />
+      </div>
+      <Navbar
+        :selectedApartment="selectedApartment"
+        @update:selectedApartment="updateSelectedApartment"
+      />
 
       <div
         v-for="(apartment, index) in apartments"
@@ -54,11 +62,22 @@ export default {
   data: function () {
     return {
       apartments: apartmani,
+      selectedApartment: null,
     };
   },
   methods: {
+    updateSelectedApartment(value) {
+      this.selectedApartment = value.value;
+      this.scrollToSection(this.selectedApartment);
+    },
     getApartmentImages(pictures, index) {
       return pictures.map((pic) => ({ link: `/Apartman${index}/${pic}.jpg` }));
+    },
+    scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
     },
   },
 };

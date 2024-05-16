@@ -3,11 +3,12 @@
     <Dropdown
       style="border: none; outline: none"
       class="mainNavbar"
-      v-model="selectedApartment"
+      v-model="localSelectedApartment"
       :options="translatedApartments"
       optionLabel="displayName"
+      optionValue="id"
       :placeholder="$t('APARTMENTS')"
-      @change="navigateToApartment"
+      @change="handleChange"
     />
     <a @click="smoothScroll('aboutUs')">{{ $t("ABOUT US") }}</a>
     <a @click="smoothScroll('prices')"> {{ $t("PRICES") }}</a>
@@ -17,9 +18,11 @@
 
 <script>
 export default {
+  props: ["selectedApartment"],
   data: function () {
     return {
-      selectedApartment: null,
+      // selectedApartment: null,
+      localSelectedApartment: null,
       apartments: [
         { name: "APARTMENT 1", id: "apartman1" },
         { name: "APARTMENT 2", id: "apartman2" },
@@ -27,6 +30,7 @@ export default {
       ],
     };
   },
+
   computed: {
     translatedApartments() {
       return this.apartments.map((apartment) => ({
@@ -35,21 +39,19 @@ export default {
       }));
     },
   },
-
+  watch: {
+    selectedApartment(newValue) {
+      this.localSelectedApartment = newValue;
+    },
+  },
   methods: {
+    handleChange(value) {
+      this.$emit("update:selectedApartment", value);
+    },
     smoothScroll(a) {
       const section = document.getElementById(a);
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
-      }
-    },
-    navigateToApartment() {
-      if (this.selectedApartment.id) {
-        const apartmentId = this.selectedApartment.id;
-        const section = document.getElementById(apartmentId);
-        if (section) {
-          section.scrollIntoView({ behavior: "smooth" });
-        }
       }
     },
   },
