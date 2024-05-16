@@ -18,9 +18,8 @@
         v-for="(apartment, index) in apartments"
         :key="index"
         class="section"
-        id="apartman2"
+        :id="apartment.id"
       >
-        <!--  :id="apartment.id" -->
         <ApartmentComponent
           :id="apartment.id"
           :header="apartment.name"
