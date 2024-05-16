@@ -83,7 +83,7 @@ export default {
     smoothScroll(a) {
       const section = document.getElementById(a);
       if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
+        section.scrollIntoView(/* { behavior: "smooth" } */);
       }
     },
     navigateToApartment() {
@@ -91,7 +91,7 @@ export default {
         const apartmentId = this.selectedApartment.id;
         const section = document.getElementById(apartmentId);
         if (section) {
-          section.scrollIntoView({ behavior: "smooth" });
+          section.scrollIntoView(/* { behavior: "smooth" } */);
         }
       }
     },
