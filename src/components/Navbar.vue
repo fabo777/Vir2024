@@ -60,6 +60,7 @@ export default {
 
 <style>
 .navbar {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
