@@ -65,6 +65,11 @@ export default {
       selectedApartment: null,
     };
   },
+  /* watch: {
+    selectedApartment(newVal) {
+      this.scrollToSection(newVal);
+    },
+  }, */
   methods: {
     updateSelectedApartment(value) {
       this.selectedApartment = value.value;
@@ -77,7 +82,9 @@ export default {
     scrollToSection(sectionId) {
       const section = document.getElementById(sectionId);
       if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
+        setTimeout(function () {
+          section.scrollIntoView({ behavior: "smooth" });
+        }, 100);
       }
     },
   },
