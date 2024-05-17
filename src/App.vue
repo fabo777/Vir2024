@@ -68,6 +68,7 @@ export default {
   methods: {
     updateSelectedApartment(value) {
       this.selectedApartment = value.value;
+      console.log(this.selectedApartment, "selectedApartment");
       this.scrollToSection(this.selectedApartment);
     },
     getApartmentImages(pictures, index) {

@@ -83,6 +83,8 @@ export default {
   },
   methods: {
     handleChange(value) {
+      console.log(value.value, "handlChange");
+      this.smoothScroll(value.value);
       this.$emit("update:selectedApartment", value);
     },
     switchLanguage(value) {
