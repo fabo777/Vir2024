@@ -95,13 +95,16 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
+
+  /*   overflow: hidden; */
+  -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  /* height: 700vh; */ /* 7 screens x 100vh */
+  /* height: 700vh;  */
   width: 80%;
   margin: 0 auto;
 }

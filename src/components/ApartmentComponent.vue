@@ -68,8 +68,6 @@ img {
   width: 80%;
   height: 90%;
   margin: 0 auto;
-  /*  border-style: solid;
-        border-color: orange; */
 }
 .apartmentComponentTextArea {
   font-size: 1.1rem;
