@@ -1,14 +1,4 @@
 <template>
-  <VuePreloader
-    background-color="#091a28"
-    color="#8daba8"
-    transition-type="fade-up"
-    :loading-speed="12"
-    :transition-speed="1100"
-    @loading-is-over="loadingIsOver"
-    @transition-is-over="transitionIsOver"
-  >
-  </VuePreloader>
   <div style="width: 100%; background-color: #8daba8">
     <div class="container">
       <div class="section">
@@ -38,6 +28,16 @@
       <div id="prices" class="section"><Prices /></div>
       <div id="contact" class="section"><Contact /></div>
     </div>
+    <VuePreloader
+      background-color="#091a28"
+      color="#8daba8"
+      transition-type="fade-up"
+      :loading-speed="12"
+      :transition-speed="1100"
+      @loading-is-over="loadingIsOver"
+      @transition-is-over="transitionIsOver"
+    >
+    </VuePreloader>
   </div>
 </template>
 
@@ -65,7 +65,9 @@ export default {
       selectedApartment: null,
     };
   },
-
+  mounted() {
+    document.body.style.overflowX = "hidden"; // Ensure overflow-x is hidden initially
+  },
   methods: {
     updateSelectedApartment(value) {
       this.selectedApartment = value.value;
@@ -81,6 +83,16 @@ export default {
           section.scrollIntoView({ behavior: "smooth" });
         }, 100);
       }
+    },
+    loadingIsOver() {
+      setTimeout(() => {
+        document.body.style.overflowX = "hidden";
+      }, 50);
+    },
+    transitionIsOver() {
+      setTimeout(() => {
+        document.body.style.overflowX = "hidden";
+      }, 50);
     },
   },
 };
