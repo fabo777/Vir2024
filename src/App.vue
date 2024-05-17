@@ -1,5 +1,5 @@
 <template>
-  <!--   <VuePreloader
+  <VuePreloader
     background-color="#091a28"
     color="#8daba8"
     transition-type="fade-up"
@@ -8,7 +8,7 @@
     @loading-is-over="loadingIsOver"
     @transition-is-over="transitionIsOver"
   >
-  </VuePreloader> -->
+  </VuePreloader>
   <div style="width: 100%; background-color: #8daba8">
     <div class="container">
       <div class="section">
@@ -65,15 +65,10 @@ export default {
       selectedApartment: null,
     };
   },
-  /* watch: {
-    selectedApartment(newVal) {
-      this.scrollToSection(newVal);
-    },
-  }, */
+
   methods: {
     updateSelectedApartment(value) {
       this.selectedApartment = value.value;
-      console.log(this.selectedApartment, "selectedApartment");
       this.scrollToSection(this.selectedApartment);
     },
     getApartmentImages(pictures, index) {

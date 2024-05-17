@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="apartmentComponentContainer">
+  <div v-lazy class="apartmentComponentContainer">
     <ApartmentHeader :header="header" />
     <div class="apartmentComponentSliderContainer">
       <Splide
@@ -8,7 +8,7 @@
       >
         <SplideSlide v-for="(image, index) in images" :key="index">
           <img
-            v-lazy="image.link"
+            :src="image.link"
             :alt="'Image ' + (index + 1)"
             style="width: 100%"
           />
