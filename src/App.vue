@@ -28,7 +28,7 @@
       <div id="prices" class="section"><Prices /></div>
       <div id="contact" class="section"><Contact /></div>
     </div>
-    <VuePreloader
+    <!--    <VuePreloader
       background-color="#091a28"
       color="#8daba8"
       transition-type="fade-up"
@@ -37,7 +37,7 @@
       @loading-is-over="loadingIsOver"
       @transition-is-over="transitionIsOver"
     >
-    </VuePreloader>
+    </VuePreloader> -->
   </div>
 </template>
 
