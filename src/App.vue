@@ -65,9 +65,9 @@ export default {
       selectedApartment: null,
     };
   },
-  mounted() {
+  /*   mounted() {
     document.body.style.overflowX = "hidden"; // Ensure overflow-x is hidden initially
-  },
+  }, */
   methods: {
     updateSelectedApartment(value) {
       this.selectedApartment = value.value;
@@ -87,12 +87,12 @@ export default {
     loadingIsOver() {
       setTimeout(() => {
         document.body.style.overflowX = "hidden";
-      }, 50);
+      }, 100);
     },
     transitionIsOver() {
       setTimeout(() => {
         document.body.style.overflowX = "hidden";
-      }, 50);
+      }, 100);
     },
   },
 };
