@@ -50,6 +50,7 @@ import LandingPage from "./components/LandingPage.vue";
 import Contact from "./components/Contact.vue";
 import { VuePreloader } from "vue-preloader";
 import "../node_modules/vue-preloader/dist/style.css";
+
 export default {
   components: {
     ApartmentComponent,

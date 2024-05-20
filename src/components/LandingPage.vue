@@ -99,7 +99,7 @@ export default {
   },
 };
 </script>
-<style SCOPED>
+<style>
 .p-button-label {
   color: #8daba8;
   /*  font-size: 1.5rem; */
