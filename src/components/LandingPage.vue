@@ -23,7 +23,7 @@
                 <a @click="smoothScroll('contact')">{{ $t("CONTACT") }}</a>
               </div>
               <Dropdown
-                style="width: 100%; margin: 0 auto"
+                style=""
                 v-model="localSelectedApartment"
                 :options="translatedApartments"
                 optionLabel="displayName"

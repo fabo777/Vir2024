@@ -14,7 +14,7 @@
           />
         </SplideSlide>
       </Splide>
-      <div v-motion-slide-visible-right>
+      <div v-motion-fade-visible>
         <div class="apartmentComponentTextArea">
           {{ $t(mainText) }}
         </div>

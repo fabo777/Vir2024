@@ -28,7 +28,7 @@
       <div id="prices" class="section"><Prices /></div>
       <div id="contact" class="section"><Contact /></div>
     </div>
-    <!--    <VuePreloader
+    <VuePreloader
       background-color="#091a28"
       color="#8daba8"
       transition-type="fade-up"
@@ -37,7 +37,7 @@
       @loading-is-over="loadingIsOver"
       @transition-is-over="transitionIsOver"
     >
-    </VuePreloader> -->
+    </VuePreloader>
   </div>
 </template>
 
@@ -48,7 +48,7 @@ import Prices from "../src/components/Prices.vue";
 import apartmani from "./Data/apartmani.json";
 import LandingPage from "./components/LandingPage.vue";
 import Contact from "./components/Contact.vue";
-//import { VuePreloader } from "vue-preloader";
+import { VuePreloader } from "vue-preloader";
 import "../node_modules/vue-preloader/dist/style.css";
 
 export default {
@@ -58,7 +58,7 @@ export default {
     Prices,
     LandingPage,
     Contact,
-    /* VuePreloader, */
+    VuePreloader,
   },
   data: function () {
     return {
@@ -85,7 +85,7 @@ export default {
         }, 100);
       }
     },
-    loadingIsOver() {
+    /*  loadingIsOver() {
       setTimeout(() => {
         document.body.style.overflowX = "hidden";
       }, 100);
@@ -94,33 +94,16 @@ export default {
       setTimeout(() => {
         document.body.style.overflowX = "hidden";
       }, 100);
-    },
+    }, */
   },
 };
 </script>
 
 <style>
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-
-  /*   overflow: hidden; */
-  -webkit-overflow-scrolling: touch;
-  overflow-x: hidden;
-}
-
 .container {
   display: flex;
   flex-direction: column;
-  /* height: 700vh;  */
+  height: 700vh;
   width: 80%;
   margin: 0 auto;
 }
@@ -128,7 +111,7 @@ html {
 .section {
   height: 100vh;
   display: flex;
-  width: 100%;
+  width: 100% !important;
   justify-content: center;
   align-items: center;
   background-color: white;

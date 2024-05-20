@@ -1,7 +1,7 @@
 <template>
   <div class="apartmentComponentContainer">
     <div><ApartmentHeader header="CONTACT" /></div>
-    <div v-motion-slide-visible-right>
+    <div>
       <div class="scrollable-table">
         <table>
           <tbody>
@@ -12,13 +12,14 @@
                   :src="row.icon"
                   :alt="'Image ' + (index + 1)"
                   style="
-                    width: 32px;
-                    height: 32px;
+                    width: 16px !important;
+                    height: 16px !important;
                     filter: invert(80%) sepia(7%) saturate(747%)
                       hue-rotate(125deg) brightness(82%) contrast(84%);
                   "
                 />
               </td>
+
               <td v-html="$t(row.text)"></td>
             </tr>
           </tbody>
@@ -84,18 +85,19 @@ export default {
 <style scoped>
 .apartmentComponentContainer {
   height: 100%;
-  width: 90%;
-  margin: 0 auto 0 auto;
+  width: 90% !important;
+  margin: 0 auto;
   padding-top: 1.3rem; /* stavljeno kako bi header bio vidljiv na malim ekranima */
 }
 
 .scrollable-table {
+  width: 100% !important;
   max-height: 80vh;
   overflow-y: auto;
 }
 table {
-  margin: 0 auto;
   width: 80%;
+  margin: 0 auto;
   border-collapse: collapse;
   border: none;
   margin-top: 1rem;

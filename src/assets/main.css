@@ -11,6 +11,24 @@
     url("https://db.onlinewebfonts.com/t/a1f86d41a569d625fbba6395102dc206.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/a1f86d41a569d625fbba6395102dc206.svg#Lemon Tuesday")format("svg");
 } */
+* {
+    box-sizing: border-box;
+   
+  }
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  /*   overflow: hidden; */
+  -webkit-overflow-scrolling: touch;
+  /*  overflow-x: hidden; */
+}
 
 @font-face {
     font-family: 'Lemon Tuesday';
