@@ -58,7 +58,7 @@ export default {
     Prices,
     LandingPage,
     Contact,
-    VuePreloader,
+    /* VuePreloader, */
   },
   data: function () {
     return {
