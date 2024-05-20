@@ -48,7 +48,7 @@ import Prices from "../src/components/Prices.vue";
 import apartmani from "./Data/apartmani.json";
 import LandingPage from "./components/LandingPage.vue";
 import Contact from "./components/Contact.vue";
-import { VuePreloader } from "vue-preloader";
+//import { VuePreloader } from "vue-preloader";
 import "../node_modules/vue-preloader/dist/style.css";
 
 export default {
