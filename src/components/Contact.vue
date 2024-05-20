@@ -56,7 +56,7 @@ export default {
       info: [
         {
           icon: "Icons/home.png",
-          text: "Address: XXVIII Miljkovica 9, 23234 Island Vir, Croatia",
+          text: "Address: XXVIII Miljkovica 9, 23234 Vir, Croatia",
         },
         { icon: "Icons/user.png", text: "Owner: Željko Jerbić" },
         {
